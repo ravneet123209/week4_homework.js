@@ -36,3 +36,25 @@ for(let i =0; i <= library.length-1;i++){
 console.log("number of books available= ",availableBook);
 
 console.log("Total number of books = ",countOfBook);
+
+
+//Task 3 — Function: Find Book
+
+const books = [
+  { title: "The Hobbit", author: "J.R.R. Tolkien", year: 1937 },
+  { title: "1984", author: "George Orwell", year: 1949 },
+  { title: "Harry Potter", author: "J.K. Rowling", year: 1997 }
+];
+
+function findBook(title) {
+  for (let i = 0; i < books.length; i++) {
+    if (books[i].title === title) {
+      return books[i];   // return the book object
+    }
+  }
+  return "Not found";    
+}
+
+console.log(findBook("1984"));
+
+console.log(findBook("The Alchemist"));
