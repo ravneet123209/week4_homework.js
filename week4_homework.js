@@ -87,10 +87,11 @@ let library1 = [
 ];
 
 function findHighestRatedBook() {
-  let highest = library1[0];   // assume first book is highest
+  let highest = library1[0];   
 
   for (let i = 1; i < library1.length; i++) {
     if (library1[i].rating > highest.rating) {
+
       highest = library1[i];
     }
   }
@@ -98,4 +99,4 @@ function findHighestRatedBook() {
   return highest;
 }
 
-console.log("Highest rated book:", findHighestRatedBook());
+console.log("Highest rated book: ", findHighestRatedBook());
